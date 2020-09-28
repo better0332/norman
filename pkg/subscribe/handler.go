@@ -93,7 +93,7 @@ func handler(apiContext *types.APIContext) error {
 		ContentType: "application/json",
 		Encoder:     types.JSONEncoder,
 	}
-	t := time.NewTicker(5 * time.Second)
+	t := time.NewTicker(20 * time.Second)
 	defer t.Stop()
 
 	done := false
